@@ -1,0 +1,65 @@
+{
+    "name": "murtaza-coskun/genel-site-funktionlari",
+    "type": "wordpress-plugin",
+    "description": "Wordpress Plugin Boilerplate with steroids!",
+    "homepage": "https:\/\/github.com\/WPBP\/WordPress-Plugin-Boilerplate-Powered",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Murtaza Coskun",
+            "email": "murtaza.coskun@gmail.com",
+            "homepage": "http://murtaza-coskun.info"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "cmb2\/cmb2": "2.7.*",
+        "composer\/installers": "1.x",
+        "freemius\/wordpress-sdk": "2.3.*",
+        "johnbillion\/extended-cpts": "4.3.*",
+        "julien731\/wp-review-me": "dev-develop",
+        "micropackage\/requirements": "^1.0",
+        "origgami\/cmb2-grid": "dev-master",
+        "seravo\/wp-custom-bulk-actions": "dev-master",
+        "stevegrunwell\/wp-cache-remember": "dev-master",
+        "wpbp\/cpt_columns": "1.0.*",
+        "wpbp\/cronplus": "1.0.*",
+        "wpbp\/debug": "1.1.*",
+        "wpbp\/fakepage": "1.0.*",
+        "wpbp\/language": "1.0.*",
+        "wpbp\/pointerplus": "1.0.*",
+        "wpbp\/template": "1.0.*",
+        "wpbp\/widgets-helper": "1.0.*",
+        "wpdesk\/wp-notice": "^3.1",
+        "yahnis-elsts\/plugin-update-checker": "^4.9",
+        "yoast\/i18n-module": "3.1.*"
+    },
+    "require-dev": {
+        "ergebnis\/composer-normalize": "^2.6"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor\/{$name}\/": [
+                "cmb2\/cmb2",
+                "origgami\/cmb2-grid",
+                "stevegrunwell\/wp-cache-remember",
+                "seravo\/wp-custom-bulk-actions"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Genel_Site_Funktionlari\\Backend\\": "backend\/",
+            "Genel_Site_Funktionlari\\Frontend\\": "frontend\/",
+            "Genel_Site_Funktionlari\\Rest\\": "rest\/",
+            "Genel_Site_Funktionlari\\Internals\\": "internals\/",
+            "Genel_Site_Funktionlari\\Integrations\\": "integrations\/",
+            "Genel_Site_Funktionlari\\Engine\\": "engine\/"
+        },
+        "files": [
+            "vendor\/wp-custom-bulk-actions\/custom-bulk-actions.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
